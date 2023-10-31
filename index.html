@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <div>
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div><br>
+
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year">
+            <option value="1">Year 1</option>
+            <option value="2">Year 2</option>
+            <option value="3">Year 3</option>
+            <option value="4">Year 4</option>
+            <option value="5">Year 5</option>
+            </select><br>
+            <div>
+                <label>Select the course(s):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="course1" name="courses" value="course1">
+                    <label for="course1">Web Development</label><br>
+                    <input type="checkbox" id="course2" name="courses" value="course2">
+                    <label for="course2">Python</label><br>
+                    <input type="checkbox" id="course3" name="courses" value="course3">
+                    <label for="course3">Java</label><br>
+                    <input type="checkbox" id="course4" name="courses" value="course4">
+                    <label for="course4">Data Structures</label><br>
+                </div>
+            </div><br>          
+            <label for="feedback">Additional Comments:</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+            
+            <label for="courseRating">How much do you know about the courses:</label>
+            <div class="radio-group">
+                <input type="radio" id="rating1" name="courseRating" value="1">
+                <label for="rating1">1</label>
+                <input type="radio" id="rating2" name="courseRating" value="2">
+                <label for="rating2">2</label>
+                <input type="radio" id="rating3" name="courseRating" value="3">
+                <label for="rating3">3</label>
+                <input type="radio" id="rating4" name="courseRating" value="4">
+                <label for="rating4">4</label>
+                <input type="radio" id="rating5" name="courseRating" value="5">
+                <label for="rating5">5</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body{
+        background-color:   #acb7ae;
+    }
+    .container{
+        background-color:  white;
+    }
+</style>
